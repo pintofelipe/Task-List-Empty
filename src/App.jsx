@@ -3,6 +3,7 @@ import './components/TaskForm'
 import TaskForm from './components/TaskForm';
 import Header from './components/Header';
 import TaskList from './components/TaskList';
+import TaskSearch from './components/TaskSearch';
 import { useState } from 'react';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   return (
     <>
       <Header/>
+      <TaskSearch/>
       <TaskForm/>
       <TaskList tasks={tasks}/>
     </>
